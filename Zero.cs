@@ -10,10 +10,14 @@ public class Zero : Vehicle // Electric motorcycle
     }
     public override void Drive()
     {
-        Console.WriteLine("Zoooooom!");
+        Console.WriteLine($"The {MainColor} Zero Zoooooom by with {MaximumOccupancy} people in the car!");
     }
     public override void Turn()
     {
-        Console.WriteLine("left");
+        Console.WriteLine("The Zero took a left");
+    }
+    public override void Stop()
+    {
+        Console.WriteLine($"The {MainColor} Zero came to a stop!");
     }
 }

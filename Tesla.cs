@@ -11,10 +11,14 @@ public class Tesla : Vehicle // Electric car
     }
     public override void Drive()
     {
-        Console.WriteLine("Mmmmmm!");
+        Console.WriteLine($"The {MainColor} Tesla Mmmmmm on by!");
     }
     public override void Turn()
     {
-        Console.WriteLine("Right");
+        Console.WriteLine("The Tesla took a right turn");
+    }
+     public override void Stop()
+    {
+        Console.WriteLine($"The {MainColor} Tesla came to a stop slowly !");
     }
 }

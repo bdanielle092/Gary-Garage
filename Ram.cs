@@ -11,10 +11,14 @@ public class Ram  : Vehicle // Gas powered truck
     }
     public override void Drive()
     {
-        Console.WriteLine("Rrrruuuummmbbble!");
+        Console.WriteLine($"The {MainColor} Ram Rrrruuuummmbbble on by!");
     }
     public override void Turn()
     {
-        Console.WriteLine("left");
+        Console.WriteLine("The Ram turned left");
+    }
+     public override void Stop()
+    {
+        Console.WriteLine($"The {MainColor} Ram came to a quick stop!");
     }
 }
