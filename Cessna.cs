@@ -1,13 +1,20 @@
 using System;
-public class Cessna : Vehicle // Propellor light aircraft
-{
-    public double FuelCapacity { get; set; }
+using gray_garage;
 
+//added an interface
+public class Cessna : Vehicle, IGasVehicle // Propellor light aircraft
+{
+    //props of the Cessna
+    public double FuelCapacity { get; set; }
+    public int CurrentTankPercentage { get; set; }
+
+    //Method to refuel the tank 
     public void RefuelTank()
     {
-        // method definition omitted
+        CurrentTankPercentage = 100;
     }
 
+    //overriding whats in Vehicle. Vehicle is the parent/base.
     public override void Drive()
     {
         Console.WriteLine($"The {MainColor} Cessna Zoooooom right by the store!");
