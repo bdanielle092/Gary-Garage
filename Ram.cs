@@ -1,7 +1,10 @@
 using System;
 namespace gray_garage
 {
-    //Added an Interface
+    //Added an Interface.
+    //Vehicle is the parents. you can only have one interface. 
+    //Ram is the child
+    //you have to bring in the props of the interface because the interface is the construct
     public class Ram : Vehicle, IGasVehicle // Gas powered truck
     {
         //props of the Ram 

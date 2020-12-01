@@ -6,10 +6,11 @@ namespace gray_garage
     public interface IGasVehicle
     {
         //props of a gas vehicle
+        double FuelCapacity { get; set; }
         int CurrentTankPercentage { get; set; }
 
         //method for refueling the tank which is used in the Ram and Cessna
-        public void RefuelTank();
+        void RefuelTank();
 
 
     }
